@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Add new shadow team</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <!-- BEGIN header -->
+    <header class="header">
+      <div class="header__left">
+        <a class="logo" href="./">SCOUTING TOOLS</a>
+        <div class="page-title">
+
+          <svg class="icon icon-ball">
+                <use xlink:href="/img/sprite.svg#icon-ball"></use>
+            </svg> Add new shadow team
+        </div>
+
+      </div>
+      <div class="header__right">
+
+      </div>
+      <button class="burger js-toggle" data-toggle=".js-sidebar" data-class="is-visible-sidebar" type="button"><i></i>
+    </button>
+    </header>
+
+    <!-- END header -->
+    <!-- BEGIN sidebar -->
+    <aside class="sidebar js-sidebar">
+      <div class="sidebar__scroll js-scrollbar">
+        <ul class="nav">
+
+          <li class="nav__item">
+
+            <a class="nav__title" href="#">
+              <svg class="icon icon-user">
+                        <use xlink:href="/img/sprite.svg#icon-user"></use>
+                    </svg> Players
+            </a>
+          </li>
+
+          <li class="nav__item">
+
+            <span class="nav__title js-toggle-subnav">
+                    <svg class="icon icon-report">
+                        <use xlink:href="/img/sprite.svg#icon-report"></use>
+                    </svg>
+                    reports
+                    <svg class="icon icon-caret-d">
+                        <use xlink:href="/img/sprite.svg#icon-caret-d"></use>
+                    </svg>
+                </span>
+            <ul class="subnav js-subnav">
+              <li class="subnav__item">
+                <a class="subnav__link" href="#">All Reports</a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__link" href="#">My Reports</a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__link" href="#">Add Report</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item">
+
+            <span class="nav__title js-toggle-subnav">
+                    <svg class="icon icon-message">
+                        <use xlink:href="/img/sprite.svg#icon-message"></use>
+                    </svg>
+                    one liners
+                    <svg class="icon icon-caret-d">
+                        <use xlink:href="/img/sprite.svg#icon-caret-d"></use>
+                    </svg>
+                </span>
+            <ul class="subnav js-subnav">
+              <li class="subnav__item">
+                <a class="subnav__link" href="#">All one liners</a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__link" href="#">My one liners</a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__link" href="#">Add one liners</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item">
+
+            <span class="nav__title js-toggle-subnav">
+                    <svg class="icon icon-calendar">
+                        <use xlink:href="/img/sprite.svg#icon-calendar"></use>
+                    </svg>
+                    calendar
+                    <svg class="icon icon-caret-d">
+                        <use xlink:href="/img/sprite.svg#icon-caret-d"></use>
+                    </svg>
+                </span>
+            <ul class="subnav js-subnav">
+              <li class="subnav__item">
+                <a class="subnav__link" href="./my-calendar.html">My Calendar</a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__link" href="./admin-calendar.html">Admin Calendar</a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__link" href="./create-new-event.html">Create New Event</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item is-active is-current">
+
+            <span class="nav__title js-toggle-subnav">
+                    <svg class="icon icon-ball">
+                        <use xlink:href="/img/sprite.svg#icon-ball"></use>
+                    </svg>
+                    shadow team
+                    <svg class="icon icon-caret-d">
+                        <use xlink:href="/img/sprite.svg#icon-caret-d"></use>
+                    </svg>
+                </span>
+            <ul class="subnav js-subnav">
+              <li class="subnav__item">
+                <a class="subnav__link" href="./my-shadow-team.html">My Shadow Teams</a>
+              </li>
+              <li class="subnav__item is-active">
+                <a class="subnav__link" href="./all-shadow-teams.html">All Shadow Teams</a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__link" href="./add-new-shadow-team.html">Add New Team</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav__item">
+
+            <span class="nav__title js-toggle-subnav">
+                    <svg class="icon icon-settings">
+                        <use xlink:href="/img/sprite.svg#icon-settings"></use>
+                    </svg>
+                    account
+                    <svg class="icon icon-caret-d">
+                        <use xlink:href="/img/sprite.svg#icon-caret-d"></use>
+                    </svg>
+                </span>
+            <ul class="subnav js-subnav">
+              <li class="subnav__item">
+                <a class="subnav__link" href="#">Settings</a>
+              </li>
+              <li class="subnav__item">
+                <a class="subnav__link" href="#">Downloads</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a class="nav__title nav__logout" href="#">
+              <svg class="icon icon-logout">
+                        <use xlink:href="/img/sprite.svg#icon-logout"></use>
+                    </svg> logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="sidebar__collapse js-toggle" data-toggle=".js-sidebar" data-class="is-hidden-sidebar">
+        <svg class="icon icon-caret-l">
+            <use xlink:href="/img/sprite.svg#icon-caret-l"></use>
+        </svg>
+        <span>Collapse menu</span>
+    </button>
+    </aside>
+
+    <!-- END sidebar -->
+    <!-- BEGIN content -->
+    <main class="out">
+
+      <div class="page-head">
+        <div class="page-title">
+
+          <svg class="icon icon-ball">
+            <use xlink:href="/img/sprite.svg#icon-ball"></use>
+        </svg> Add new shadow team
+        </div>
+      </div>
+      <form action="#">
+        <div class="panel-action">
+          <div class="title">Add New Shadow Team</div>
+          <!--<div class="title hidden-mob">Add New Shadow Team</div>-->
+          <!--<div class="title visible-mob">Add New</div>-->
+          <label class="field">
+            <span class="field__title">Team Name:</span>
+            <span class="field__body">
+                <input class="input" type="text" name="team-name" placeholder="Type team name">
+            </span>
+        </label>
+          <label class="field">
+            <span class="field__title">Shadow Team Type:</span>
+            <span class="field__body">
+                <span class="select js-select">
+                    <span class="select__head js-select-head">Select</span>
+                    <select name="team-type">
+                        <option>Select</option>
+                        <option value="1">team 1</option>
+                    </select>
+                    <svg class="icon icon-caret-d">
+                        <use xlink:href="/img/sprite.svg#icon-caret-d"></use>
+                    </svg>
+                </span>
+            </span>
+        </label>
+          <label class="field">
+            <span class="field__title">Competition Level:</span>
+            <span class="field__body">
+                <span class="select js-select">
+                    <span class="select__head js-select-head">Select</span>
+                    <select name="competition-level">
+                        <option>Select</option>
+                        <option value="1">level 1</option>
+                    </select>
+                    <svg class="icon icon-caret-d">
+                        <use xlink:href="/img/sprite.svg#icon-caret-d"></use>
+                    </svg>
+                </span>
+            </span>
+        </label>
+        </div>
+        <div class="scheme">
+          <div class="scheme__row">
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">2</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>9</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">Z.Zidane<span>/</span>Real Madrid<span>/</span>44</div>
+                  <div class="player__data">T.Test<span>/</span>FC Barcelona<span>/</span>17</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+          </div>
+          <div class="scheme__row">
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">1</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>11</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">1</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>10</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">1</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>7</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+          </div>
+          <div class="scheme__row">
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">2</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>6</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">5</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>8</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                  <div class="player__data">T.Test Long Name<span>/</span>FC Test Club Long Name<span>/</span>19</div>
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scheme__row">
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">1</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>3</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">2</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>4</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">2</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>5</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+            <div class="player">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">1</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>2</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Test<span>/</span>FC Test<span>/</span>19</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+          </div>
+          <div class="scheme__row">
+            <div class="player player_goalkeeper">
+              <div class="player__number">
+                <button class="counter js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">1</button>
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>1</span>
+              </div>
+              <div class="player__details">
+                <div class="player__info">
+                  <div class="player__data">T.Tes<span>/</span>Real Madrid<span>/</span>44</div>
+                </div>
+              </div>
+              <div class="player__action">
+                <button class="btn-action js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+                        <svg class="icon icon-plus">
+                            <use xlink:href="/img/sprite.svg#icon-plus"></use>
+                        </svg>
+                        Add
+                    </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrap">
+          <button class="btn" type="submit">SAVE TEAM</button>
+        </div>
+      </form>
+
+      <div class="message">
+        <svg class="icon icon-alert">
+        <use xlink:href="/img/sprite.svg#icon-alert"></use>
+    </svg>
+        <p>DISCLAIMER: This scouting report and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you have received this report in error please contact the Club's IT
+          Department immediately on
+          <a href="mailto:itservicedesk@arsenal.co.uk">itservicedesk@arsenal.co.uk</a>. Any opinions expressed in this report are those of the individual scout and not necessarily those of The Arsenal Football Club PLC.</p>
+      </div>
+      <div class="popup js-popup-new-player js-scrollbar">
+        <div class="popup__in">
+          <div class="popup__head">
+            <div class="player player_big">
+              <div class="player__number">
+                <svg class="icon icon-player">
+                        <use xlink:href="/img/sprite.svg#icon-player"></use>
+                    </svg>
+                <span>9</span>
+              </div>
+            </div>
+            <div class="title title_small">Add Centre Forward</div>
+          </div>
+          <form action="#">
+            <label class="field field_full">
+                <span class="field__body">
+                    <input class="input js-player-mask" type="text" name="team-name" placeholder="Type Name / Team name / Age">
+                </span>
+            </label>
+            <label class="field field_full">
+                <span class="field__body">
+                    <input class="input js-player-mask" type="text" name="team-name" placeholder="Type Name / Team name / Age">
+                </span>
+            </label>
+            <label class="field field_full">
+                <span class="field__body">
+                    <input class="input js-player-mask" type="text" name="team-name" placeholder="Type Name / Team name / Age">
+                </span>
+            </label>
+            <label class="field field_full">
+                <span class="field__body">
+                    <input class="input js-player-mask" type="text" name="team-name" placeholder="Type Name / Team name / Age">
+                </span>
+            </label>
+            <label class="field field_full">
+                <span class="field__body">
+                    <input class="input js-player-mask" type="text" name="team-name" placeholder="Type Name / Team name / Age">
+                </span>
+            </label>
+            <div class="btn-wrap btn-wrap_small">
+              <button class="btn" type="submit">Save position</button>
+            </div>
+          </form>
+        </div>
+        <button class="popup__close js-toggle" data-toggle=".js-popup-new-player" data-class="is-open-popup" type="button">
+        <svg class="icon icon-close">
+            <use xlink:href="/img/sprite.svg#icon-close"></use>
+        </svg>
+    </button>
+      </div>
+      <div class="popup popup_overlay js-popup-player-info js-scrollbar">
+        <div class="popup__in">
+          <div class="title title_tiny">#6 Centre Forward</div>
+          <ul class="player-info">
+            <li>Test1 <span>/</span> FC Test <span>/</span> 19</li>
+            <li>Test2 <span>/</span> FC Test <span>/</span> 21</li>
+            <li>Test Long Name <span>/</span> FC Long Club Name...</li>
+            <li>Name Name <span>/</span> FC Test Name <span>/</span> 25</li>
+            <li>Test5 <span>/</span> FC Test <span>/</span> 34</li>
+          </ul>
+          <button class="popup__close js-toggle" data-toggle=".js-popup-player-info" data-class="is-open-popup" type="button">
+            <svg class="icon icon-close">
+                <use xlink:href="/img/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        </div>
+      </div>
+
+    </main>
+    <!-- END content -->
+
+    <!-- BEGIN scripts -->
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+
+  </body>
+
+</html>
